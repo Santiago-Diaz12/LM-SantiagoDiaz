@@ -1,0 +1,15 @@
+Nuestro primer ejercicio consiste en diseñar una plantilla de documento HTML para iniciar
+rápidamente todas nuestras páginas y ahorrarnos escribir los elementos mínimos de una página.
+AMPLIACIÓN: crear una plantilla similar a la anterior para XHTML1.1 (asegúrate de validarla
+según lo explicado en clase y recuerda ponerle extensión .xhtml)
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title> PONER UN TÍTULO </title>
+</head>
+<body>
+<!--AQUÍ EL CÓDIGO HTML... -->
+</body>
+</html>
