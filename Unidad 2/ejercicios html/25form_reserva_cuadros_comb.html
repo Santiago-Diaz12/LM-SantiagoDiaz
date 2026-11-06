@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Reserva de habitacion</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+    <form action="reserva.php" method="get">
+        <fieldset>
+            <legend>Datos del solicitante</legend>
+            <label for="solicitante">Nombre del solicitante de la reserva </labeL> <br>
+            <input type="text" id= "solicitante" name="solicitante" maxlength="100" size="70" required="required" autofocus="autofocus"> 
+            <br/>
+            <label for="telefono">Telefono de contacto</labeL>
+            <input type="text" id="telefono" placeholder="9 numeros" name="telefono" pattern="[0-9]{9}" maxlength="9" size="10" required="required">
+            <br/>
+            <label for="DNI">DNI(seleccione archivo de imagen)</label>
+            <input type="file" id="DNI" name="DNI" required="required" accept="image/*" value="Examinar...">
+        </fieldset>
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="habitacion">Habitacion:</label>
+            <br/>
+            <select name="habitacion" id="habitacion" size="4">
+                <option value="azul" select="selected">azul</option>
+                <option value="verde">verde</option>
+                <option value="amarilla">amarilla</option>
+                <option value="morado">morada</option>
+            </select>
+            <br/>
+            <label for="ocupantes">Ocupacion:</label>
+            <br/>
+            <select name="ocupantes" id="ocupantes" size="2">
+                <option value="Doble">doble</option>
+                <option value="Individual">individual</option>
+            </select>
+            <br/>
+            <label for="provincia">Provincia:</label>
+            <br/>
+            <select id="provincia" name="provincia">
+                <optgroup label="Galicia">
+                    <option value="C">La Coruña</option>
+                    <option value="L">Lugo</option>
+                    <option value="O">Orense</option>
+                    <option value="P">Pontevedra</option>
+                </optgroup> 
+            </select>
+            <br/>
+        </fieldset>
+            <input type="submit" value="Entrar" />
+            <input type="reset" value="Limpiar" />
+    </form>
+</body>
+
+</html>

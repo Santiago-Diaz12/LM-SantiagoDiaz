@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formulario de incidencia</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+
+<body>
+    <form action="incidencia.php" method="get">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+            <label for=“usuario">Usuario </labeL>
+                <input type="text“ id=" usuario" name="usuario" placeholder="(Nombre y apellidos)" /> <br>
+                <input type="radio" name="usuario" value="A" />Alumnpo<br />
+                <input type="radio" name="usuario" value="P" />Profesor<br />
+        </fieldset>
+        <fieldset>
+            <legend>Dónde se produce</legend>
+            <input type="radio" name="donde" value="D" />Todo el departamento<br />
+            <input type="radio" name="donde" value="A" />Todo el aula<br />
+            <input type="radio" name="donde" value="E" />Solo un equipo<br />
+            <label for="donde">Identifica el dpto, aula o equipo </labeL>
+            <input type="text“ id="donde" name="donde"  /> 
+        </fieldset>
+        <fieldset>
+            <legend>Informacion sobre la incidencia</legend> 
+            <label for=“comentario">Descripcion de la incidencia 
+            <textarea name="comentario" rows="4" cols="40" placeholder="Describe el problema con detalle"></textarea>
+            </label>
+            <br>
+            <label for=“urgencia">Nivel de urgencia   <br>
+                <input type="radio" name="urgencia" />Alto<br />
+                <input type="radio" name="urgencia" />Bajo<br />
+                <input type="radio" name="urgencia" />Medio<br /> 
+            </label>
+            <label for="mail">Me gustaria ser avisado por mail cuando se resuelva la incidencia 
+            <input type="checkbox" name="mail" value="on" checked="checked"/> <br>
+            </label>
+            <input type="submit" value="Entrar" />
+            <input type="reset" value="Limpiar" />
+    </form>
+    
+</body>
+
+</html>
